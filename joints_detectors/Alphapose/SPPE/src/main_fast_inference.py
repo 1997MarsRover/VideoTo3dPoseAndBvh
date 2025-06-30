@@ -44,7 +44,9 @@ class InferenNet(nn.Module):
             flip_out, self.dataset))
 
         out = (flip_out + out) / 2
-
+        print('----------Here--------------')
+        print(out)
+        print('----------End---------------')
         return out
 
 
